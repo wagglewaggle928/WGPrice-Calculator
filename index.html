@@ -45,6 +45,25 @@
             padding: 10px 20px;
             border-radius: 5px;
         }
+
+        /* 媒体查询，当屏幕宽度小于768px时应用样式 */
+        @media (max-width: 768px) {
+            .container {
+                text-align: center;
+            }
+
+            .input-container {
+                display: inline-block;
+                text-align: left;
+                width: 80%;
+            }
+
+            .input-container input[type="text"],
+            .input-container input[type="number"],
+            .input-container select {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -69,6 +88,13 @@
             <input type="text" id="salePrice" name="salePrice" readonly>
         </div>
     </div>
+
+    <script>
+        // 在此添加JavaScript代码来处理计算价格的逻辑
+    </script>
+</body>
+</html>
+
 
 
   <script>
